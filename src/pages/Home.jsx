@@ -22,8 +22,9 @@ export default function Home() {
     <Container>
       <HeroSection />
       <VrLine>
-        {/* Profile Info */}
-        <SectionWrapper>
+        {/* Professional Summary */}
+        {/* <i className="fa-solid fa-user-tie text-white"></i> */}
+        {/* <SectionWrapper>
           <IconWrapper>
             <img
               className="h-6 w-6 rounded-full"
@@ -33,7 +34,7 @@ export default function Home() {
           </IconWrapper>
 
           <ContentWrapper>
-            <HeadingPrimary>Profile</HeadingPrimary>
+            <HeadingPrimary>Professional Summary</HeadingPrimary>
             <p className="text-sm">
               Highly skilled in React, MongoDB, Express.js and Node.js web
               development. Proficient in database design, server-side
@@ -41,7 +42,7 @@ export default function Home() {
               maintainable code as a passionate developer.
             </p>
           </ContentWrapper>
-        </SectionWrapper>
+        </SectionWrapper> */}
 
         {/* Work Experience */}
         <SectionWrapper>
@@ -60,7 +61,8 @@ export default function Home() {
               <Bullet />
               <HeadingSecondary>Sahu Technologies </HeadingSecondary>
             </Wrapper>
-            <SubHeading>Web Developer - [2 months]</SubHeading>
+            <SubHeading>Web Developer</SubHeading>
+
             <ul className="list-disc relative left-4 text-sm">
               <li>Internship focused on bug fixing and app enhancement.</li>
               <li>
@@ -387,7 +389,7 @@ export default function Home() {
 
 const Container = tw.main`px-4 pb-4 print:p-0 min-h-screen`;
 const VrLine = tw.div`min-h-screen pb-3 flex flex-col gap-5 w-0.5 ml-10 rounded-sm bg-slate-500 z-10`;
-const SectionWrapper = tw.section`flex relative top-3 -left-3 w-[80vw]`;
+const SectionWrapper = tw.section`flex relative top-3 -left-3 w-[80vw] lg:w-[50vw]`;
 const IconWrapper = tw.div`h-8 w-8 relative z-10  ring-2 ring-white right-[3px] shadow-sm  bg-black grid place-items-center rounded-full`;
 const ContentWrapper = tw.div`w-11/12 px-2 flex flex-col gap-1`;
 const Bullet = tw.span`h-3 w-3 bg-black rounded-full z-10 ml-[3px] ring-2 ring-white`;
